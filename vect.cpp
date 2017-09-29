@@ -36,7 +36,7 @@ public:
 	{
 		size = obj.size;
 		V = size;
-		std::swap(mass, obj.mass);
+		mass = obj.mass;
 		
 	}
 
@@ -59,7 +59,8 @@ public:
 		if (this == &obj) return *this;
 		size = obj.size;
 		V = obj.V;
-		std::swap(mass, obj.mass);
+		mass = obj.mass;
+		return *this;
 	}
 
 	~TVector()

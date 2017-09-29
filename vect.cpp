@@ -58,7 +58,7 @@ public:
 	{
 		if (this == &obj) return *this;
 		size = obj.size;
-		V = size;
+		V = obj.V;
 		std::swap(mass, obj.mass);
 	}
 
